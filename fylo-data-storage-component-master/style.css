@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  background-position: center bottom -30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* dodati stil za mobile media query*/
+
+.flex_con {
+  width: 46.875rem;
+  display: flex;
+  justify-content: space-between;
+
+  /* dodati jos box-shadow*/
+}
+
+.box_one {
+  flex-basis: 15.625rem;
+  padding: 2rem 5.5rem 2rem 1.5rem;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 0.5rem 6rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.188rem 0.5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0rem;
+}
+
+.logo_icon {
+  scale: 0.8;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  margin-left: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.icon svg {
+  scale: 0.8;
+}
+
+.box_two {
+  flex-basis: 28rem;
+  margin-top: 2rem;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.188rem 0.5rem;
+}
+
+.left {
+  background-color: #fff;
+
+  border-radius: 0.5rem;
+  width: 9rem;
+  padding: 0.7rem 1rem;
+  position: absolute;
+  bottom: 6.5rem;
+  left: 18rem;
+  display: flex;
+  align-items: center;
+}
+
+.left::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  position: absolute;
+  border-bottom: 1rem solid #fff;
+  top: 3.2rem;
+  left: 7.66rem;
+  transform: rotate(45deg);
+}
+
+.bold {
+  font-weight: 700;
+  color: hsl(229, 57%, 11%);
+  font-size: 2rem;
+}
+.light {
+  color: hsl(229, 7%, 55%);
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+  margin-top: 0.4rem;
+}
+
+.storage p {
+  color: hsl(243, 100%, 93%);
+  font-weight: 400;
+}
+
+.bl {
+  font-weight: 700;
+}
+
+.color {
+  margin-top: 1rem;
+  /* width: 25rem;*/
+  background-color: hsla(229, 57%, 11%, 0.4);
+  border-radius: 0.5rem;
+  padding: 0.15rem;
+}
+
+.inner_color {
+  width: 18rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  position: relative;
+}
+
+.inner_color::after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 17.3rem;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.gb {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gb p {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 23.313rem) and (max-width: 48rem) {
+  body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .flex_con {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .box_one {
+    flex-basis: 30%;
+    padding: 2rem 5.5rem 2rem 1.5rem;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 0.5rem 6rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.188rem 0.5rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0rem;
+  }
+
+  .logo_icon {
+    scale: 0.8;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.8rem;
+
+    margin-left: 0.6rem;
+    margin-top: 1.2rem;
+  }
+
+  .icon {
+    background-color: hsl(229, 57%, 11%);
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+
+  .icon svg {
+    scale: 0.8;
+  }
+
+  .box_two {
+    flex-basis: 40%;
+    margin-top: 2rem;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.188rem 0.5rem;
+  }
+
+  .left {
+    background-color: #fff;
+
+    border-radius: 0.5rem;
+    width: 9rem;
+    padding: 0.7rem 1rem;
+    position: absolute;
+    bottom: -22%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    display: flex;
+    align-items: center;
+  }
+
+  .left::after {
+    content: "";
+    display: none;
+  }
+  .bold {
+    font-weight: 700;
+    color: hsl(229, 57%, 11%);
+    font-size: 2rem;
+  }
+  .light {
+    color: hsl(229, 7%, 55%);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+    margin-top: 0.4rem;
+  }
+
+  .storage p {
+    color: hsl(243, 100%, 93%);
+    font-weight: 400;
+  }
+
+  .bl {
+    font-weight: 700;
+  }
+
+  .color {
+    margin-top: 1rem;
+
+    background-color: hsla(229, 57%, 11%, 0.4);
+    border-radius: 0.5rem;
+    padding: 0.15rem;
+  }
+
+  .inner_color {
+    width: 75%;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    position: relative;
+  }
+
+  .inner_color::after {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: -0.6rem;
+    position: absolute;
+    top: 50%;
+    left: 99.4%;
+  }
+
+  .gb {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gb p {
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 48rem) and (max-width: 80rem) {
+  body {
+    min-height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.875rem;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
